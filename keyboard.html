@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard</title>
+</head>
+<style>
+    .calcy{
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+        width:fit-content;
+        height: auto;
+        margin:auto;
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(12,auto);
+        column-gap: 0;
+        justify-content: start;
+        border-radius: 5px;
+        padding: 20px;
+        grid-template-rows: repeat(5, auto);
+        position: relative;
+        background-color: #f1e9cb;
+    }
+    .space-key {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    height: 30px;
+    width: 216px; 
+    margin: 2px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 10px;
+    grid-column: 5 / 9; 
+    grid-row: 5;
+    position: absolute;
+    bottom: 20px;        
+    left: 2px;
+    color: rgb(69, 188, 69);
+    background-color: rgb(242, 215, 219); 
+ }
+ .enter-key {
+   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    height: 32px;
+    width: 110px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 10px;
+    position: absolute;
+    bottom: 17px;   
+    right: 18px;
+    color:rgb(89, 224, 132);
+    background-color: rgb(242, 215, 219); 
+ } 
+ .shift-key {
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    height: 32px;
+    width: 110px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 10px;
+    position: absolute;
+    bottom: 63px;   
+    right: 18px;
+    color:rgb(69, 216, 96);
+    background-color: rgb(242, 215, 219); 
+ } 
+    .s1>.p1{
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        height: 30px;
+        width: 90px;
+        margin:2px;
+        border-radius:5px;
+        text-align: center;
+        padding-top: 10px;
+        background-color: rgb(242, 215, 219);  
+    }
+     .s2>.p2{
+       box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        height: 30px;
+        width: 50px;
+        margin:2px;
+        border-radius:5px;
+        text-align: center;
+        padding-top: 10px;
+        background-color: rgb(242, 215, 219); 
+    }
+    .s3>.p3{
+       box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        height: 30px;
+        width: 90px;
+        margin:2px;
+        border-radius:5px;
+        text-align: center;
+        padding-top: 10px; 
+        background-color: rgb(242, 215, 219);   
+    }
+     .s4>.p4{
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        height: 30px;
+        width: 50px;
+        margin:2px;
+        border-radius:5px;
+        text-align: center;
+        padding-top: 10px;
+        background-color: rgb(242, 215, 219); 
+    }
+     .s5>.p5{
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        height: 30px;
+        width: 50px;
+        margin:2px;
+        border-radius:5px;
+        text-align: center;
+        padding-top: 10px;
+        background-color: rgb(242, 215, 219); 
+    }
+     .s6>.p6{
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        height: 30px;
+        width: 50px;
+        margin:2px;
+        border-radius:5px;
+        text-align: center;
+        padding-top: 10px;
+        background-color: rgb(242, 215, 219); 
+    }
+     .s7>.p7{
+       box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        height: 30px;
+        width: 50px;
+        margin:2px;
+        border-radius:5px;
+        text-align: center;
+        padding-top: 10px;
+        background-color: rgb(242, 215, 219); 
+    }
+    .s8>.p8{
+       box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        height: 30px;
+        width: 50px;
+        margin:2px;
+        border-radius:5px;
+        text-align: center;
+        padding-top: 10px;
+        background-color: rgb(242, 215, 219); 
+    }
+    .s9>.p9{
+       box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        height: 30px;
+        width: 90px;
+        margin:2px;
+        border-radius:5px;
+        text-align: center;
+        padding-top: 10px;
+        background-color: rgb(242, 215, 219);    
+    }
+     .s10>.p10{
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        height: 30px;
+        width: 50px;
+        margin:2px;
+        border-radius:5px;
+        text-align: center;
+        padding-top: 10px;
+        background-color: rgb(242, 215, 219); 
+    }
+     .s11>.p11{
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        height: 30px;
+        width: 50px;
+        margin:2px;
+        border-radius:5px;
+        text-align: center;
+        padding-top: 10px;
+        background-color: rgb(242, 215, 219); 
+    }
+     .s12>.p12{
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        height: 30px;
+        width: 50px;
+        margin:2px;
+        border-radius:5px;
+        text-align: center;
+        padding-top: 10px;
+        background-color: rgb(242, 215, 219); 
+    }
+    h1{
+        text-align: center;
+        font-weight: bolder;
+        color: rgb(144, 127, 255);
+        font-size: 52px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+</style>
+<body>
+    <h1>CT Calculator Task</h1>
+    <div class="calcy">
+    <div class="s1">
+        <div class="p1">~</div>
+        <div class="p1">tab</div>
+        <div class="p1">Caps</div>
+        <div class="p1">Shift</div>
+        <div class="p1">Windows</div>
+    </div>
+    <div class="s2">
+        <div class="p2">1</div>
+        <div class="p2">Q</div>
+        <div class="p2">A</div>
+        <div class="p2">Z</div>
+        <div class="p2">ctrl</div>
+    </div>
+    <div class="s3">
+        <div class="p3">2</div>
+        <div class="p3">W</div>
+        <div class="p3">S</div>
+        <div class="p3">X</div>
+        <div class="p3">Options</div>
+    </div>
+    <div class="s4">
+        <div class="p4">3</div>
+        <div class="p4">E</div>
+        <div class="p4">D</div>
+        <div class="p4">C</div>
+        <div class="p4">Alt</div>
+    </div>
+    <div class="s5">
+        <div class="p5">4</div>
+        <div class="p5">R</div>
+        <div class="p5">F</div>
+        <div class="p5">V</div>
+    </div>
+    <div class="s6">
+        <div class="p6">5</div>
+        <div class="p6">T</div>
+        <div class="p6">G</div>
+        <div class="p6">B</div>
+    </div>
+    <div class="s7">
+        <div class="p7">6</div>
+        <div class="p7">Y</div>
+        <div class="p7">H</div>
+        <div class="p7">N</div>
+    </div>
+    <div class="s8">
+        <div class="p8">7</div>
+        <div class="p8">U</div>
+        <div class="p8">J</div>
+        <div class="p8">M</div>
+    </div>
+    <div class="s9">
+        <div class="p9">8</div>
+        <div class="p9">I</div>
+        <div class="p9">K</div>
+        <div class="p9"><</div>
+        <div class="p9">alt</div>
+    </div>
+    <div class="s10">
+        <div class="p10">9</div>
+        <div class="p10">o</div>
+        <div class="p10">L</div>
+        <div class="p10">></div>
+        <div class="p10">option</div>
+    </div>
+    <div class="s11">
+        <div class="p11">0</div>
+        <div class="p11">p</div>
+        <div class="p11"><</div>
+    </div>
+    <div class="s12">
+        <div class="p12">Delete</div>
+        <div class="p12">\</div>
+        <div class="p12">></div>
+    </div>
+    <div class="space-key">Space</div>
+    <div class="enter-key">Enter</div>
+    <div class="shift-key">shift</div>
+    </div>
+</body>
+</html>
