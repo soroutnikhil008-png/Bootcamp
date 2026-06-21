@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini calculator</title>
+</head>
+<body>
+    <input type="number" placeholder="Enter 1st Number" id="first">
+    <input type="number" placeholder="Enter 2nd Number" id="second">
+    <br><br>
+    <button id="b1" onclick="addtwonumber()">Add</button>
+    <button id="b2" onclick="subtwonumber()">Subtract</button>
+    <button id="b3" onclick="multiplytwonumber()">Multiply</button>
+    <button id="b4" onclick="dividetwonumber()">Divide</button>
+</body>
+</html>
+<script>
+const First = document.querySelector("#first")
+console.log(First);
+const data = First.value;
+console.log(data)
+const Second = document.querySelector("#second")
+console.log(Second);
+const data1 = Second.value;
+console.log(data1)
+function addtwonumber(){
+    const data = First.value;
+    console.log(data)
+    const data1 = Second.value;
+    console.log(data1)
+    alert(eval(data + "+" + data1));
+    console.log(eval(data + "+" + data1));
+}
+function subtwonumber(){
+    const data = First.value;
+    console.log(data)
+    const data1 = Second.value;
+    console.log(data1)
+    alert(eval(data + "-" + data1));
+    console.log(eval(data + "-" + data1));
+}
+function multiplytwonumber(){
+    const data = First.value;
+    console.log(data)
+    const data1 = Second.value;
+    console.log(data1)
+    alert(eval(data + "*" + data1));
+    console.log(eval(data + "*" + data1));
+}
+function dividetwonumber(){
+    const data = First.value;
+    console.log(data)
+    const data1 = Second.value;
+    console.log(data1)
+    alert(eval(data + "/" + data1));
+    console.log(eval(data + "/" + data1));
+}
+</script>
