@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+</head>
+<body>
+	<form id="myform" action="">
+	<input type="text" name="name" id="name">
+	<select id="gender">
+		<option value="">--</option>
+		<option value="male">M</option>
+		<option value="female">F</option>
+	</select>
+	<input type="text" name="email" id="email">
+	<input type="text" name="mobile" id="mobile">
+	<hr>
+	</form>
+	<h1 id="dName">NAME</h1>
+	<h2 id="dGender">GENDER</h2>
+	<h3 id="dEmail">EMAIL</h3>
+	<h4 id="dMobile">MOBILE</h4>
+	<hr>
+	<button onclick="showName()">NAME</button>
+	<button onclick="showGender()">GENDER</button>
+	<button onclick="showEmail()">EMAIL</button>
+	<button onclick="showMobile()">MOBILE</button>
+	<button onclick="resetForm()">RESET FORM</button>
+	<button onclick="resetDisplay()">RESET DISPLAY</button>
+	<script type="text/javascript">
+		function resetForm() {
+			// Show filled name inside h1
+			document.querySelector("#myform").reset();
+		}
+
+		function showGender() {
+			// Show the selected gender inside h2
+			const Gender = document.querySelector("#gender")
+			console.log(Gender);
+			const data1 = Gender.value;
+			console.log(data1)
+			document.querySelector("#dGender").innerText = `GENDER:${data1}`
+		}
+
+		function showEmail() {
+			// Show the filled email inside h3
+			const Email = document.querySelector("#email")
+			console.log(Email);
+			const data2 = Email.value;
+			console.log(data2)
+			document.querySelector("#dEmail").innerText = `EMAIL:${data2}`
+		}
+
+		function showMobile() {
+			// Show the filled mobile inside h4
+			const Mobile = document.querySelector("#mobile")
+			console.log(Mobile);
+			const data3 = Mobile.value;
+			console.log(data3)
+			document.querySelector("#dMobile").innerText = `Mobile:${data3}`
+		}
+
+		function showName() {
+			// Reset all the form elements to default values (blank "")
+			const Name = document.querySelector("#name")
+			console.log(Name);
+			const data = Name.value;
+			console.log(data)
+			document.querySelector("#dName").innerText = `NAME:${data}`
+		}
+
+		function resetDisplay() {
+			// Reset all the headings (h1, h2, h3, h4) to blank values
+			document.querySelector("h1").innerText= "NAME: ";
+			document.querySelector("h2").innerText= "GENDER: ";
+			document.querySelector("h3").innerText= "Email: ";
+			document.querySelector("h4").innerText= "Mobile: ";
+		}
+	</script>
+</body>
+</html>
